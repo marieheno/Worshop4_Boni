@@ -102,10 +102,10 @@ public class Dealership {
         return matchingVehicles;
     }
 
-    public List<Vehicle> getVehicleByType(String vehicleTye){
+    public List<Vehicle> getVehicleByType(String vehicleType){
         List<Vehicle> matchingVehicles = new ArrayList<>();
         for (Vehicle vehicle : inventory){
-            if (vehicle.getVehicleType().equalsIgnoreCase(vehicleTye)){
+            if (vehicle.getVehicleType().equalsIgnoreCase(vehicleType)){
                 matchingVehicles.add(vehicle);
             }
         }
